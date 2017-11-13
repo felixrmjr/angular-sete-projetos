@@ -56,4 +56,7 @@ Gera um novo serviço
 // (g = atalho de gerador) - (service = serviço)
 ng g service nome
 
-
+--------------------------------------------
+Instalar o bootstrap
+--------------------------------------------
+ngm install --save bootstrap@3
