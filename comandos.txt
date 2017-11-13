@@ -38,3 +38,22 @@ Gera o build de produção
 --------------------------------------------
 ng build --prod
 
+--------------------------------------------
+Gera um novo modulo
+--------------------------------------------
+// (g = atalho de gerador) - (module = modulo)
+ng g module nome
+
+--------------------------------------------
+Gera um novo componente
+--------------------------------------------
+// (g = atalho de gerador) - (component = compomente)
+ng g component nome
+
+--------------------------------------------
+Gera um novo serviço
+--------------------------------------------
+// (g = atalho de gerador) - (service = serviço)
+ng g service nome
+
+
