@@ -59,4 +59,4 @@ ng g service nome
 --------------------------------------------
 Instalar o bootstrap
 --------------------------------------------
-ngm install --save bootstrap@3
+npm install --save bootstrap@3
