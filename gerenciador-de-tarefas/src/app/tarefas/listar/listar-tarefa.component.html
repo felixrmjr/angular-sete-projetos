@@ -5,26 +5,27 @@
     <th>Tarefa</th>
     <th>Concluída</th>
     <th class="text-center">
-      <a 
+      <a [routerLink]="['/tarefas/cadastrar']"
          class="btn btn-xs btn-success">
          <span class="glyphicon glyphicon-plus" 
            aria-hidden="true"></span> Novo
       </a>
-      <!-- [routerLink]="['/tarefas/cadastrar']" -->
   </th>
   </tr>
-  <tr> <!-- *ngFor="let tarefa of tarefas" -->
-    <!-- [tarefaConcluida]="tarefa.concluida" 
-    [class.success]="!tarefa.concluida" -->
-    <td>
-      <!-- {{ tarefa.nome }} -->
+  <tr *ngFor="let tarefa of tarefas">
+    <td
+       [class.success]="!tarefa.concluida" >
+       <!-- [tarefaConcluida]="tarefa.concluida" -->
+      {{ tarefa.nome }} 
     </td>
     <td style="width: 70px" class="text-center">
       <input 
         type="checkbox"
-        >
-        <!-- [value]="tarefa.id"
+        [value]="tarefa.id"
         [checked]="tarefa.concluida"
+        >
+        <!-- 
+        
         (click)="alterarStatus(tarefa)" -->
     </td>
     <td class="text-center" style="width: 200px">
@@ -46,5 +47,4 @@
   </tr>
 </table>
 
-<p >Nenhuma tarefa cadastrada.</p> 
-<!-- *ngIf="tarefas.length==0" -->
+<p *ngIf="tarefas.length==0">Nenhuma tarefa cadastrada.</p> 
